@@ -1,0 +1,12 @@
+# redo data
+.do_built
+.do_built.dir/
+*.did
+.redo/
+
+# build artifacts
+*.map
+*.sym
+*.tmp
+*.gbc
+obj/
