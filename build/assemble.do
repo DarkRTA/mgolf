@@ -9,7 +9,7 @@ RGBASM="rgbasm"
 # $2 - output file
 # $PWD - root dir of project
 
-cat > $3 << EOF
+cat > "$3" << EOF
 #!/bin/sh
 set -e
 RGBASMFLAGS="$RGBASMFLAGS"
@@ -20,6 +20,7 @@ redo-ifchange "\$1"
 deps=\$(sed -e 's@.*: @@' "\$2.d")
 # shellcheck disable=all
 redo-ifchange \$deps
+rm "\$2.d"
 EOF
 
-chmod u+x $3
+chmod u+x "$3"
