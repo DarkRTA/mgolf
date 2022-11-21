@@ -8016,7 +8016,7 @@ jr_069_61ce:
     ld a, d
     ldh a, [$e5]
     sbc a
-    jp Jump_000_03e1
+    jp $03e1
 
 
     inc b

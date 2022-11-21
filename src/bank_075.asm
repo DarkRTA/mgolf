@@ -2379,7 +2379,7 @@ jr_075_4a84:
     ret nc
 
     pop hl
-    jp nc, Jump_000_03e1
+    jp nc, $03e1
 
     add sp, $23
     ret nz

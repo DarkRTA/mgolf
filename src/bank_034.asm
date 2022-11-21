@@ -12540,7 +12540,7 @@ jr_034_7e71:
     ld hl, $c2a0
     ld de, $c466
     ld bc, $0004
-    call Call_000_03d3
+    call MemCopy
     ld a, [$c2a4]
     ld [$c465], a
 

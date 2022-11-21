@@ -2830,7 +2830,7 @@ jr_033_4e1c:
     ld hl, $c2a0
     ld de, $c466
     ld bc, $0004
-    call Call_000_03d3
+    call MemCopy
     ld a, [$c2a4]
     ld [$c465], a
     ret
@@ -9233,7 +9233,7 @@ jr_033_6f77:
     ld hl, $c2a0
     ld de, $c466
     ld bc, $0004
-    call Call_000_03d3
+    call MemCopy
     ld a, [$c2a4]
     ld [$c465], a
 
@@ -11637,7 +11637,7 @@ jr_033_7b9b:
     ld hl, $c2a0
     ld de, $c466
     ld bc, $0004
-    call Call_000_03d3
+    call MemCopy
     ld a, [$c2a4]
     ld [$c465], a
 
@@ -11933,7 +11933,7 @@ jr_033_7d50:
     ld hl, $c2a0
     ld de, $c466
     ld bc, $0004
-    call Call_000_03d3
+    call MemCopy
     ld a, [$c2a4]
     ld [$c465], a
 

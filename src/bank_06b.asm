@@ -5356,7 +5356,7 @@ jr_06b_5718:
     ld [$8525], sp
     ld h, e
     nop
-    jp Jump_000_03e1
+    jp $03e1
 
 
     add d

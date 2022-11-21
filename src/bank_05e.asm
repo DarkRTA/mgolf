@@ -7896,7 +7896,7 @@ Jump_05e_6084:
 
     pop de
     and b
-    call nc, Call_000_03d5
+    call nc, $03d5
     jp nc, $ddd3
 
     ldh [$dc], a

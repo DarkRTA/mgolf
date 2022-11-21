@@ -12728,7 +12728,7 @@ jr_07e_7a76:
 
     ld [$eb01], a
     ld e, $e3
-    jp nc, Jump_000_03df
+    jp nc, $03df
 
     ld l, b
     rst $10
@@ -13170,7 +13170,7 @@ jr_07e_7ba8:
 
     ld e, c
     db $e3
-    jp nc, Jump_000_03df
+    jp nc, $03df
 
     jp nc, $d968
 

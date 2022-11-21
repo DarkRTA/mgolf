@@ -10785,7 +10785,7 @@ jr_060_6dae:
     add e
     add b
     inc de
-    call nc, Call_000_03d5
+    call nc, $03d5
     ld b, c
     ld de, $3946
     ei

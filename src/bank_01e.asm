@@ -11380,7 +11380,7 @@ jr_01e_6b7a:
     ld bc, $0020
 
 jr_01e_6b80:
-    call Call_000_03d3
+    call MemCopy
     pop hl
     pop de
     pop bc

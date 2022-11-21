@@ -833,7 +833,7 @@ jr_00b_4674:
     push bc
     push de
     push hl
-    call Call_000_03d3
+    call MemCopy
     pop hl
     pop de
     pop bc
@@ -890,7 +890,7 @@ jr_00b_46ba:
     push bc
     push de
     push hl
-    call Call_000_03d3
+    call MemCopy
     pop hl
     pop de
     pop bc
@@ -1247,7 +1247,7 @@ jr_00b_4888:
     push bc
     push de
     push hl
-    call Call_000_03d3
+    call MemCopy
     pop hl
     pop de
     pop bc
@@ -1281,7 +1281,7 @@ jr_00b_48b0:
     push bc
     push de
     push hl
-    call Call_000_03d3
+    call MemCopy
     pop hl
     pop de
     pop bc
@@ -9110,7 +9110,7 @@ jr_00b_6deb:
     push bc
     push de
     push hl
-    call Call_000_03d3
+    call MemCopy
     pop hl
     pop de
     pop bc
@@ -9144,7 +9144,7 @@ jr_00b_6e13:
     push bc
     push de
     push hl
-    call Call_000_03d3
+    call MemCopy
     pop hl
     pop de
     pop bc

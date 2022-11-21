@@ -4197,7 +4197,7 @@ jr_005_54b5:
     push de
     ld de, $c780
     ld bc, $0020
-    call Call_000_03d3
+    call MemCopy
     pop de
     ld a, $05
     ldh [$96], a
@@ -4455,7 +4455,7 @@ jr_005_560e:
     push de
     ld de, $c780
     ld bc, $0020
-    call Call_000_03d3
+    call MemCopy
     pop de
     ld a, $05
     ldh [$96], a

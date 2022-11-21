@@ -14984,7 +14984,7 @@ jr_018_7d34:
     ld bc, $0020
 
 jr_018_7d37:
-    call Call_000_03d3
+    call MemCopy
     pop hl
     pop de
     pop bc

@@ -1024,7 +1024,7 @@ Call_000_0221:
     ld a, [hl+]
     ld h, [hl]
     ld l, a
-    call Call_000_03d3
+    call MemCopy
     pop af
 
 Call_000_022d:
@@ -1533,30 +1533,20 @@ Call_000_03cf:
     ret
 
 
-Call_000_03d3:
+; copies bc bytes from *hl to *de in the forward direction
+MemCopy:
     inc c
     dec c
-
-Call_000_03d5:
-    jr z, jr_000_03d8
-
+    jr z, .loop
     inc b
-
-jr_000_03d8:
+.loop:
     ld a, [hl+]
     ld [de], a
     inc de
-
-Jump_000_03db:
     dec c
-    jr nz, jr_000_03d8
-
+    jr nz, .loop
     dec b
-
-Jump_000_03df:
-    jr nz, jr_000_03d8
-
-Jump_000_03e1:
+    jr nz, .loop
     ret
 
 
@@ -2363,7 +2353,7 @@ Call_000_0655:
 
 Jump_000_0661:
     push af
-    call Call_000_03d3
+    call MemCopy
     pop af
     ldh [$95], a
     ld [$2000], a

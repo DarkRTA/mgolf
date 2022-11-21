@@ -647,7 +647,7 @@ jr_040_4dbb:
     ld hl, $4ca6
     ld de, $d200
     ld bc, $0010
-    call Call_000_03d3
+    call MemCopy
     ldh a, [$8c]
     and $0f
     add a

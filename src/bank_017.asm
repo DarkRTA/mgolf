@@ -3194,7 +3194,7 @@ jr_017_503b:
     ld hl, $d426
     ld de, $d42a
     ld bc, $0004
-    call Call_000_03d3
+    call MemCopy
     ld bc, $0103
 
 Jump_017_504a:

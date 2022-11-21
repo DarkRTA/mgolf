@@ -1334,7 +1334,7 @@ jr_00e_4623:
     push bc
     ld hl, $c800
     ld bc, $000b
-    call Call_000_03d3
+    call MemCopy
     pop bc
 
 jr_00e_462e:
@@ -4415,7 +4415,7 @@ Call_00e_5448:
     ld hl, $d800
     ld de, $c600
     ld bc, $0074
-    call Call_000_03d3
+    call MemCopy
     ld hl, $c600
     call Call_00e_53a6
     ld hl, $c600

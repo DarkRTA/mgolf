@@ -15314,7 +15314,7 @@ jr_01a_7b4d:
     ld bc, $0020
 
 jr_01a_7b53:
-    call Call_000_03d3
+    call MemCopy
     pop hl
     pop de
     pop bc

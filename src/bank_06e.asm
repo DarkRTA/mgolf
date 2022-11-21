@@ -6767,7 +6767,7 @@ jr_06e_5cd3:
     adc c
     db $e3
     ld b, e
-    call nc, Call_000_03d5
+    call nc, $03d5
     ldh [$df], a
     ei
     ldh [$e1], a

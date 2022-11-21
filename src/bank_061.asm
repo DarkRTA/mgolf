@@ -831,7 +831,7 @@ jr_061_5654:
     ld sp, hl
     ld e, e
     push af
-    jp c, Jump_000_03db
+    jp c, $03db
 
     sub $d7
     db $fc

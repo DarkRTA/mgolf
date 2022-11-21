@@ -1322,7 +1322,7 @@ jr_010_4702:
     ld [$c835], a
     ld de, $d400
     ld bc, $0006
-    call Call_000_03d3
+    call MemCopy
     ld hl, $d406
     xor a
     ld [hl+], a
@@ -1901,11 +1901,11 @@ jr_010_4a38:
     ld hl, $d400
     ld de, $d361
     ld bc, $0006
-    call Call_000_03d3
+    call MemCopy
     ld hl, $d51d
     ld de, $d36d
     ld bc, $0006
-    call Call_000_03d3
+    call MemCopy
     ld a, [$d446]
     ld [$d368], a
 
@@ -3805,7 +3805,7 @@ Call_010_550b:
     ld hl, $d400
     ld de, $d514
     ld bc, $0006
-    call Call_000_03d3
+    call MemCopy
     ret
 
 
@@ -3813,7 +3813,7 @@ Call_010_5518:
     ld hl, $d514
     ld de, $d373
     ld bc, $0006
-    call Call_000_03d3
+    call MemCopy
     xor a
     ld h, d
     ld l, e
@@ -4667,7 +4667,7 @@ jr_010_5999:
     ld hl, $d426
     ld de, $d42a
     ld bc, $0004
-    call Call_000_03d3
+    call MemCopy
     call Call_010_5ee2
     ld bc, $0103
 
@@ -5184,7 +5184,7 @@ Jump_010_5c87:
     ld hl, $d426
     ld de, $d42a
     ld bc, $0004
-    call Call_000_03d3
+    call MemCopy
     call Call_010_5ee2
     ld bc, $0103
 
@@ -9228,11 +9228,11 @@ Jump_010_6f9e:
     ld hl, $d361
     ld de, $d400
     ld bc, $0006
-    call Call_000_03d3
+    call MemCopy
     ld hl, $d36d
     ld de, $d51d
     ld bc, $0006
-    call Call_000_03d3
+    call MemCopy
     ld a, $3f
     call Call_010_4b14
     ld a, [$d368]
