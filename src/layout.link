@@ -1,0 +1,256 @@
+ROM0
+	"ROM Bank $000"
+ROMX $01
+	"ROM Bank $001"
+ROMX $02
+	"ROM Bank $002"
+ROMX $03
+	"ROM Bank $003"
+ROMX $04
+	"ROM Bank $004"
+ROMX $05
+	"ROM Bank $005"
+ROMX $06
+	"ROM Bank $006"
+ROMX $07
+	"ROM Bank $007"
+ROMX $08
+	"ROM Bank $008"
+ROMX $09
+	"ROM Bank $009"
+ROMX $0a
+	"ROM Bank $00a"
+ROMX $0b
+	"ROM Bank $00b"
+ROMX $0c
+	"ROM Bank $00c"
+ROMX $0d
+	"ROM Bank $00d"
+ROMX $0e
+	"ROM Bank $00e"
+ROMX $0f
+	"ROM Bank $00f"
+ROMX $10
+	"ROM Bank $010"
+ROMX $11
+	"ROM Bank $011"
+ROMX $12
+	"ROM Bank $012"
+ROMX $13
+	"ROM Bank $013"
+ROMX $14
+	"ROM Bank $014"
+ROMX $15
+	"ROM Bank $015"
+ROMX $16
+	"ROM Bank $016"
+ROMX $17
+	"ROM Bank $017"
+ROMX $18
+	"ROM Bank $018"
+ROMX $19
+	"ROM Bank $019"
+ROMX $1a
+	"ROM Bank $01a"
+ROMX $1b
+	"ROM Bank $01b"
+ROMX $1c
+	"ROM Bank $01c"
+ROMX $1d
+	"ROM Bank $01d"
+ROMX $1e
+	"ROM Bank $01e"
+ROMX $1f
+	"ROM Bank $01f"
+ROMX $20
+	"ROM Bank $020"
+ROMX $21
+	"ROM Bank $021"
+ROMX $22
+	"ROM Bank $022"
+ROMX $23
+	"ROM Bank $023"
+ROMX $24
+	"ROM Bank $024"
+ROMX $25
+	"ROM Bank $025"
+ROMX $26
+	"ROM Bank $026"
+ROMX $27
+	"ROM Bank $027"
+ROMX $28
+	"ROM Bank $028"
+ROMX $29
+	"ROM Bank $029"
+ROMX $2a
+	"ROM Bank $02a"
+ROMX $2b
+	"ROM Bank $02b"
+ROMX $2c
+	"ROM Bank $02c"
+ROMX $2d
+	"ROM Bank $02d"
+ROMX $2e
+	"ROM Bank $02e"
+ROMX $2f
+	"ROM Bank $02f"
+ROMX $30
+	"ROM Bank $030"
+ROMX $31
+	"ROM Bank $031"
+ROMX $32
+	"ROM Bank $032"
+ROMX $33
+	"ROM Bank $033"
+ROMX $34
+	"ROM Bank $034"
+ROMX $35
+	"ROM Bank $035"
+ROMX $36
+	"ROM Bank $036"
+ROMX $37
+	"ROM Bank $037"
+ROMX $38
+	"ROM Bank $038"
+ROMX $39
+	"ROM Bank $039"
+ROMX $3a
+	"ROM Bank $03a"
+ROMX $3b
+	"ROM Bank $03b"
+ROMX $3c
+	"ROM Bank $03c"
+ROMX $3d
+	"ROM Bank $03d"
+ROMX $3e
+	"ROM Bank $03e"
+ROMX $3f
+	"ROM Bank $03f"
+ROMX $40
+	"ROM Bank $040"
+ROMX $41
+	"ROM Bank $041"
+ROMX $42
+	"ROM Bank $042"
+ROMX $43
+	"ROM Bank $043"
+ROMX $44
+	"ROM Bank $044"
+ROMX $45
+	"ROM Bank $045"
+ROMX $46
+	"ROM Bank $046"
+ROMX $47
+	"ROM Bank $047"
+ROMX $48
+	"ROM Bank $048"
+ROMX $49
+	"ROM Bank $049"
+ROMX $4a
+	"ROM Bank $04a"
+ROMX $4b
+	"ROM Bank $04b"
+ROMX $4c
+	"ROM Bank $04c"
+ROMX $4d
+	"ROM Bank $04d"
+ROMX $4e
+	"ROM Bank $04e"
+ROMX $4f
+	"ROM Bank $04f"
+ROMX $50
+	"ROM Bank $050"
+ROMX $51
+	"ROM Bank $051"
+ROMX $52
+	"ROM Bank $052"
+ROMX $53
+	"ROM Bank $053"
+ROMX $54
+	"ROM Bank $054"
+ROMX $55
+	"ROM Bank $055"
+ROMX $56
+	"ROM Bank $056"
+ROMX $57
+	"ROM Bank $057"
+ROMX $58
+	"ROM Bank $058"
+ROMX $59
+	"ROM Bank $059"
+ROMX $5a
+	"ROM Bank $05a"
+ROMX $5b
+	"ROM Bank $05b"
+ROMX $5c
+	"ROM Bank $05c"
+ROMX $5d
+	"ROM Bank $05d"
+ROMX $5e
+	"ROM Bank $05e"
+ROMX $5f
+	"ROM Bank $05f"
+ROMX $60
+	"ROM Bank $060"
+ROMX $61
+	"ROM Bank $061"
+ROMX $62
+	"ROM Bank $062"
+ROMX $63
+	"ROM Bank $063"
+ROMX $64
+	"ROM Bank $064"
+ROMX $65
+	"ROM Bank $065"
+ROMX $66
+	"ROM Bank $066"
+ROMX $67
+	"ROM Bank $067"
+ROMX $68
+	"ROM Bank $068"
+ROMX $69
+	"ROM Bank $069"
+ROMX $6a
+	"ROM Bank $06a"
+ROMX $6b
+	"ROM Bank $06b"
+ROMX $6c
+	"ROM Bank $06c"
+ROMX $6d
+	"ROM Bank $06d"
+ROMX $6e
+	"ROM Bank $06e"
+ROMX $6f
+	"ROM Bank $06f"
+ROMX $70
+	"ROM Bank $070"
+ROMX $71
+	"ROM Bank $071"
+ROMX $72
+	"ROM Bank $072"
+ROMX $73
+	"ROM Bank $073"
+ROMX $74
+	"ROM Bank $074"
+ROMX $75
+	"ROM Bank $075"
+ROMX $76
+	"ROM Bank $076"
+ROMX $77
+	"ROM Bank $077"
+ROMX $78
+	"ROM Bank $078"
+ROMX $79
+	"ROM Bank $079"
+ROMX $7a
+	"ROM Bank $07a"
+ROMX $7b
+	"ROM Bank $07b"
+ROMX $7c
+	"ROM Bank $07c"
+ROMX $7d
+	"ROM Bank $07d"
+ROMX $7e
+	"ROM Bank $07e"
+ROMX $7f
+	"ROM Bank $07f"

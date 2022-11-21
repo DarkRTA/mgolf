@@ -11,36 +11,21 @@ case $1 in
 		sha1sum -c mgolf.sha1
 		;;
 	clean)
-		rm -rfv -- *.gbc *.sym *.map obj
+		rm -rf -- *.gbc *.sym *.map obj
+		redo build/clean
 		;;
 	mgolf.gbc)
-		redo-ifchange obj/game.o
-		rgblink -n mgolf.sym -m mgolf.map -o "$3" obj/game.o
-		rgbfix -v -p 255 "$3"
+		obj="$(find src -name '*.asm' | sed -e 's|^src|obj/|g' -e 's/.asm$/.o/')"
+		redo-ifchange $obj
+		rgblink -l src/layout.link -n mgolf.sym -m mgolf.map -o "$3" $obj
+		rgbfix -O -v -p 255 "$3"
 		;;
 	*.o)
-		src="src/${2#obj}"
+		src="src/${2#obj/}"
 		src="${src%.o}.asm"
 		mkdir -p "$(dirname "$1")"
-		redo-ifchange "$src"
-		rgbasm -HI src -M "$1.d" -o "$3" "$src"
-		deps=$(sed -e 's@.*: @@' "$1.d")
-		# shellcheck disable=all
-		redo-ifchange $deps
-		;;
-	*.1bpp)
-		png="src/${2#obj/}"
-		png="${png%.1bpp}.png"
-		redo-ifchange "$png"
-		mkdir -p "$(dirname "$1")"
-		rgbgfx -d 1 -o "$3" "$png"
-		;;
-	*.2bpp)
-		png="src/${2#obj/}"
-		png="${png%.2bpp}.png"
-		redo-ifchange "$png"
-		mkdir -p "$(dirname "$1")"
-		rgbgfx -d 2 -o "$3" "$png"
+		redo-ifchange build/assemble
+		build/assemble $src $3
 		;;
 	*)
 		echo "target not found: $1"
