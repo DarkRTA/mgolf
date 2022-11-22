@@ -5,7 +5,7 @@ INCLUDE "macros/unk.inc"
 ; mgbdis v1.6 - Game Boy ROM disassembler by Matt Currie and contributors.
 ; https://github.com/mattcurrie/mgbdis
 
-SECTION "ROM Bank $000", ROM0[$0]
+SECTION "ROM Bank $000", ROM0
 
 RST_00::
     db $c3

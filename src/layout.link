@@ -254,3 +254,8 @@ ROMX $7e
 	"ROM Bank $07e"
 ROMX $7f
 	"ROM Bank $07f"
+
+; ram
+WRAM0
+	;"WRAM0 c800"
+	;"WRAM0 c880"
