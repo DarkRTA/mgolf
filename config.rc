@@ -1,0 +1,6 @@
+RGBLINKFLAGS=""
+RGBLINK="rgblink"
+RGBFIXFLAGS="-O -v -p 255"
+RGBFIX="rgbfix"
+RGBASMFLAGS="-E -H -I src"
+RGBASM="rgbasm"
