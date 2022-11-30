@@ -25,7 +25,7 @@ SECTION "ROM Bank $008", ROMX[$4000], BANK[$8]
 
 Call_008_4028:
     push de
-    ld hl, $c880
+    ld hl, wPlayer1
     ld d, $00
     ld e, a
     ld a, [$c835]
@@ -1946,13 +1946,13 @@ jr_008_48df:
 
     call Call_008_4f30
     ld a, $0f
-    ld [$c8a8], a
+    ld [wPlayer1_Round_PowerShots], a
     ret
 
 
     call Call_008_5062
     ld a, $0f
-    ld [$c8a8], a
+    ld [wPlayer1_Round_PowerShots], a
     ret
 
 
@@ -2100,7 +2100,7 @@ jr_008_499f:
     ld [hl], $10
     pop af
     ld [$c835], a
-    ld a, [$c893]
+    ld a, [wPlayer1_Char_IsAi]
     cp $03
     jr z, jr_008_49c4
 
@@ -2140,7 +2140,7 @@ jr_008_49db:
     ld [hl], $10
     pop af
     ld [$c835], a
-    ld a, [$c893]
+    ld a, [wPlayer1_Char_IsAi]
     cp $03
     jr z, jr_008_49f8
 

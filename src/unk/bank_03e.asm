@@ -909,9 +909,9 @@ Call_03e_456a:
     cp $01
     jr z, jr_03e_457d
 
-    ld hl, $c890
+    ld hl, wPlayer1_Char_Sprite
     ld a, [hl]
-    ld hl, $c893
+    ld hl, wPlayer1_Char_IsAi
     ld d, $00
     jr jr_03e_4586
 
@@ -962,7 +962,7 @@ Call_03e_45b0:
     push bc
     push de
     push hl
-    ld a, [$c890]
+    ld a, [wPlayer1_Char_Sprite]
     ld h, $00
     ld l, a
     add hl, hl
@@ -980,7 +980,7 @@ Call_03e_45b0:
     pop hl
     ld de, $4d90
     add hl, de
-    ld a, [$c899]
+    ld a, [wPlayer1_Char_AltColor]
     bit 4, a
     jr z, jr_03e_45dd
 
@@ -3796,7 +3796,7 @@ Call_03e_60ca:
     cp $01
     jr z, jr_03e_60e6
 
-    ld hl, $c880
+    ld hl, wPlayer1
     jr jr_03e_60e9
 
 jr_03e_60e6:
@@ -4749,9 +4749,9 @@ Call_03e_659d:
     cp $01
     jr z, jr_03e_65b0
 
-    ld hl, $c890
+    ld hl, wPlayer1_Char_Sprite
     ld a, [hl]
-    ld hl, $c893
+    ld hl, wPlayer1_Char_IsAi
     ld d, $00
     jr jr_03e_65b9
 

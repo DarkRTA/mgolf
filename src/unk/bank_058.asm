@@ -12937,7 +12937,7 @@ jr_058_7684:
     and e
     add [hl]
     and b
-    call nc, $c880
+    call nc, wPlayer1
     nop
     and b
     ld a, b

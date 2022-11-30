@@ -12549,7 +12549,7 @@ jr_07e_79e4:
     nop
     and $a7
     sbc $ff
-    jp nc, $c8a8
+    jp nc, wPlayer1_Round_PowerShots
 
     ld [$29d7], sp
     ld [$c8d8], sp

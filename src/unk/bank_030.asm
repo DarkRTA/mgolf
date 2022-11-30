@@ -12368,7 +12368,7 @@ jr_030_7d38:
     ld sp, hl
     rst $38
     push de
-    ld hl, $c880
+    ld hl, wPlayer1
     ld d, $00
     ld e, a
     ld a, [$c835]

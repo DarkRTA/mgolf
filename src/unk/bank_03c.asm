@@ -546,7 +546,7 @@ jr_03c_4242:
 
 Call_03c_4256:
     push de
-    ld hl, $c880
+    ld hl, wPlayer1
     ld d, $00
     ld e, a
     ld a, [$c835]
@@ -8226,7 +8226,7 @@ Call_03c_6a55:
     ld bc, $ff01
     rst $18
     ld e, $02
-    ld hl, $c893
+    ld hl, wPlayer1_Char_IsAi
     ld [hl], $01
     ld hl, $c8d3
     ld [hl], $00
@@ -8263,17 +8263,17 @@ Call_03c_6a55:
     ld [$d44f], a
     ld a, $3c
     ld [$d450], a
-    ld a, [$c89a]
+    ld a, [wPlayer1_Char_DriveDistance]
     ld [$d4c6], a
     ld a, [$c89b]
     ld [$d4c7], a
-    ld a, [$c89e]
+    ld a, [wPlayer1_Char_ShotMeetArea]
     ld [$d4c9], a
-    ld a, [$c89d]
+    ld a, [wPlayer1_Char_ShotHook]
     ld [$d4ca], a
-    ld a, [$c89c]
+    ld a, [wPlayer1_Char_ShotHeight]
     ld [$d4c8], a
-    ld a, [$c89f]
+    ld a, [wPlayer1_Char_ShotControl]
     ld [$d4cb], a
     ld a, $00
     ld [$bff0], a

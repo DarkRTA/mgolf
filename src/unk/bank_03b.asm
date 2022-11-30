@@ -531,7 +531,7 @@ Jump_03b_4166:
 
 
     ld a, $0a
-    ld [$c8a8], a
+    ld [wPlayer1_Round_PowerShots], a
     ret
 
 

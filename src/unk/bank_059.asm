@@ -9073,7 +9073,7 @@ Jump_059_66ff:
 
     rst $18
     ld b, b
-    jp z, $c880
+    jp z, wPlayer1
 
     and b
     ret nz

@@ -846,7 +846,7 @@ jr_010_43f9:
     ld [$c834], a
     ld a, $0f
     ld [$c2a5], a
-    ld hl, $c893
+    ld hl, wPlayer1_Char_IsAi
     ld [hl], $00
     ld hl, $c8d3
     ld [hl], $00
@@ -890,7 +890,7 @@ Call_010_4451:
 
     db $58, $02
 
-    ld hl, $c890
+    ld hl, wPlayer1_Char_Sprite
     ld a, [hl]
     ld hl, $c8d0
     cp [hl]
@@ -904,7 +904,7 @@ jr_010_4487:
 
 jr_010_4489:
     ld a, [$c896]
-    ld [$c8a8], a
+    ld [wPlayer1_Round_PowerShots], a
     ld a, [$c8d6]
     ld [$c8e8], a
     ld a, [$c874]
@@ -934,7 +934,7 @@ Jump_010_44b4:
     ld hl, $d4f1
     ld [hl+], a
     ld [hl], a
-    ld a, [$c8a8]
+    ld a, [wPlayer1_Round_PowerShots]
     ld [$c896], a
     ld a, [$c8e8]
     ld [$c8d6], a
@@ -944,7 +944,7 @@ Jump_010_44b4:
     ld [$c876], a
     ld a, [$c8fe]
     ld [$c877], a
-    ld a, [$c893]
+    ld a, [wPlayer1_Char_IsAi]
     cp $03
     jr nz, jr_010_4516
 
@@ -1291,7 +1291,7 @@ jr_010_46d7:
 
 Call_010_46d9:
 jr_010_46d9:
-    ld bc, $c880
+    ld bc, wPlayer1
     ld hl, $c8a2
     ld de, $c8e3
     ld a, [$c8e9]
@@ -2051,7 +2051,7 @@ jr_010_4b0a:
 
 Call_010_4b14:
     push de
-    ld hl, $c880
+    ld hl, wPlayer1
     ld d, $00
     ld e, a
     ld a, [$c835]

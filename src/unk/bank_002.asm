@@ -1675,7 +1675,7 @@ Jump_002_48b2:
 
     ld a, $13
     push de
-    ld hl, $c880
+    ld hl, wPlayer1
     ld d, $00
     ld e, a
     ld a, [$c835]
@@ -1753,7 +1753,7 @@ jr_002_48de:
     ld b, a
     ld a, $13
     push de
-    ld hl, $c880
+    ld hl, wPlayer1
     ld d, $00
     ld e, a
     ld a, [$c835]
@@ -1829,7 +1829,7 @@ jr_002_494b:
     ret
 
 
-    ld hl, $c880
+    ld hl, wPlayer1
     bit 0, c
     jr z, jr_002_499e
 
@@ -1848,7 +1848,7 @@ jr_002_49a5:
     ret
 
 
-    ld hl, $c880
+    ld hl, wPlayer1
     bit 0, c
     jr z, jr_002_49b1
 
@@ -1869,7 +1869,7 @@ jr_002_49b8:
 
     ld a, b
     push af
-    ld de, $c880
+    ld de, wPlayer1
     bit 0, c
     jr z, jr_002_49c6
 
@@ -1971,7 +1971,7 @@ jr_002_4a20:
 
 Call_002_4a28:
     ld a, b
-    ld hl, $c880
+    ld hl, wPlayer1
     bit 0, c
     jr z, jr_002_4a33
 
@@ -5222,7 +5222,7 @@ jr_002_5a18:
 
 Jump_002_5a1d:
     ld a, $ff
-    ld [$c890], a
+    ld [wPlayer1_Char_Sprite], a
     pop de
     ret
 
@@ -5231,7 +5231,7 @@ Call_002_5a24:
     ld c, a
     ld b, $0f
     ld a, $ff
-    ld [$c890], a
+    ld [wPlayer1_Char_Sprite], a
     ret
 
 
@@ -5312,7 +5312,7 @@ jr_002_5abe:
 
 jr_002_5ac3:
     ld a, $ff
-    ld [$c890], a
+    ld [wPlayer1_Char_Sprite], a
     pop de
     ret
 
@@ -5338,13 +5338,13 @@ Call_002_5aca:
     jr nz, jr_002_5ae6
 
     ld a, $0f
-    ld [$c890], a
+    ld [wPlayer1_Char_Sprite], a
     ret
 
 
 jr_002_5ae6:
     ld a, $ff
-    ld [$c890], a
+    ld [wPlayer1_Char_Sprite], a
     ret
 
 
@@ -5374,19 +5374,19 @@ Call_002_5afb:
     ld c, $02
     call Call_000_03a7
     pop de
-    ld a, [$c890]
+    ld a, [wPlayer1_Char_Sprite]
     ld [de], a
     inc de
     ld a, b
     ld [de], a
     inc de
-    ld hl, $c880
+    ld hl, wPlayer1
     ld bc, $000b
     call MemCopy
     ld a, [$c892]
     ld [de], a
     inc de
-    ld a, [$c89a]
+    ld a, [wPlayer1_Char_DriveDistance]
     ld [de], a
     inc de
     ld a, [$c89b]
@@ -5395,7 +5395,7 @@ Call_002_5afb:
     ld a, [$c891]
     ld [de], a
     inc de
-    ld a, [$c89d]
+    ld a, [wPlayer1_Char_ShotHook]
     ld [de], a
     inc de
     pop de
@@ -5418,7 +5418,7 @@ Call_002_5b38:
     jr z, jr_002_5b4f
 
     ld a, $ff
-    ld [$c890], a
+    ld [wPlayer1_Char_Sprite], a
     ld a, $ff
     ret
 
@@ -5532,7 +5532,7 @@ Call_002_5bec:
     jr jr_002_5c17
 
 jr_002_5bff:
-    ld hl, $c880
+    ld hl, wPlayer1
     ld a, [$c835]
     and $01
     swap a
@@ -5578,7 +5578,7 @@ Call_002_5c19:
     jr jr_002_5c4e
 
 jr_002_5c36:
-    ld hl, $c880
+    ld hl, wPlayer1
     ld a, [$c835]
     and $01
     swap a

@@ -1200,7 +1200,7 @@ jr_064_44ca:
     nop
     db $db
     inc e
-    jp nz, $c89e
+    jp nz, wPlayer1_Char_ShotMeetArea
 
     pop bc
     ld c, b
@@ -7091,7 +7091,7 @@ jr_064_5ddb:
     ld a, a
     push hl
     dec hl
-    ld bc, $c880
+    ld bc, wPlayer1
     ld [hl], h
     ld bc, $5f00
     add d

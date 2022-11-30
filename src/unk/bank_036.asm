@@ -10172,7 +10172,7 @@ jr_036_6d5e:
     ldh [$80], a
     rst $28
     add b
-    call z, $c880
+    call z, wPlayer1
     ret nz
 
     db $f4

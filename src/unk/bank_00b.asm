@@ -5357,9 +5357,9 @@ jr_00b_5aa2:
     ld e, $01
 
 jr_00b_5aa6:
-    ld a, [$c890]
+    ld a, [wPlayer1_Char_Sprite]
     ld b, a
-    ld a, [$c899]
+    ld a, [wPlayer1_Char_AltColor]
     and $10
     or b
     ld b, a
@@ -5411,7 +5411,7 @@ jr_00b_5aa6:
 
 
 jr_00b_5b00:
-    ld a, [$c890]
+    ld a, [wPlayer1_Char_Sprite]
     ld b, a
     ld a, [$c96c]
     ld c, a
@@ -6290,7 +6290,7 @@ jr_00b_5fdc:
     bit 0, c
     jr nz, jr_00b_5fef
 
-    ld a, [$c893]
+    ld a, [wPlayer1_Char_IsAi]
     cp $03
     jr z, @+$06
 
@@ -6301,7 +6301,7 @@ jr_00b_5fdc:
     jr @+$0f
 
 jr_00b_5fef:
-    ld a, [$c893]
+    ld a, [wPlayer1_Char_IsAi]
     cp $03
     jr z, jr_00b_5ffa
 

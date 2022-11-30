@@ -1762,7 +1762,7 @@ jr_031_4910:
     ld a, $00
     ld [$c83a], a
     ld a, $00
-    ld [$c890], a
+    ld [wPlayer1_Char_Sprite], a
     ld a, $04
     ld [$c8d0], a
     rst $18
@@ -4109,8 +4109,8 @@ Call_031_5449:
     ld [hl+], a
     db $10
     ld a, $03
-    ld [$c89d], a
-    ld hl, $c89a
+    ld [wPlayer1_Char_ShotHook], a
+    ld hl, wPlayer1_Char_DriveDistance
     ld de, $00d2
     ld a, e
     ld [hl+], a
@@ -4214,7 +4214,7 @@ jr_031_54cd:
     rst $18
     ld [hl+], a
     db $10
-    ld hl, $c89a
+    ld hl, wPlayer1_Char_DriveDistance
     ld de, $00d2
     ld a, e
     ld [hl+], a
@@ -5941,12 +5941,12 @@ jr_031_5d55:
     rst $18
     ld [hl+], a
     db $10
-    ld hl, $c89a
+    ld hl, wPlayer1_Char_DriveDistance
     ld de, $00dc
     ld a, e
     ld [hl+], a
     ld [hl], d
-    ld hl, $c89c
+    ld hl, wPlayer1_Char_ShotHeight
     ld a, $04
     ld [hl], a
     ldh a, [$95]
@@ -6051,7 +6051,7 @@ jr_031_5dea:
     rst $18
     ld [hl+], a
     db $10
-    ld hl, $c89a
+    ld hl, wPlayer1_Char_DriveDistance
     ld de, $00dc
     ld a, e
 
@@ -7705,8 +7705,8 @@ jr_031_6650:
     ld a, [de]
     db $10
     ld a, $03
-    ld [$c89d], a
-    ld hl, $c89a
+    ld [wPlayer1_Char_ShotHook], a
+    ld hl, wPlayer1_Char_DriveDistance
     ld de, $00f5
     ld a, e
     ld [hl+], a
@@ -7862,7 +7862,7 @@ jr_031_66de:
     ldh [rSVBK], a
     ld hl, $d4e3
     ld [hl], $21
-    ld hl, $c89a
+    ld hl, wPlayer1_Char_DriveDistance
     ld de, $00e6
     ld a, e
     ld [hl+], a
@@ -12340,7 +12340,7 @@ jr_031_7cdc:
     ld sp, hl
     rst $38
     push de
-    ld hl, $c880
+    ld hl, wPlayer1
     ld d, $00
     ld e, a
     ld a, [$c835]

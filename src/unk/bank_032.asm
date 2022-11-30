@@ -1724,7 +1724,7 @@ jr_032_48b5:
 jr_032_48c7:
     jr z, jr_032_48b5
 
-    ld [$c890], a
+    ld [wPlayer1_Char_Sprite], a
     or $10
     ld [$c8d0], a
     ld a, $01
@@ -1756,7 +1756,7 @@ jr_032_48e9:
     ld a, $03
     ld [$c836], a
     ld a, $0a
-    ld [$c890], a
+    ld [wPlayer1_Char_Sprite], a
     ld a, $08
 
 jr_032_48f9:
@@ -1782,7 +1782,7 @@ jr_032_4911:
     jr nz, jr_032_4930
 
     ld a, $00
-    ld [$c890], a
+    ld [wPlayer1_Char_Sprite], a
     ld a, $f6
     ld [$c8be], a
     ld a, $04
@@ -1804,7 +1804,7 @@ jr_032_4932:
     jr nz, jr_032_4956
 
     ld a, $06
-    ld [$c890], a
+    ld [wPlayer1_Char_Sprite], a
     ld a, $02
     ld [$c8d0], a
     ld a, $03
@@ -3901,7 +3901,7 @@ Jump_032_534e:
     jp z, Jump_032_534e
 
     ld [$c836], a
-    ld hl, $c880
+    ld hl, wPlayer1
     ld de, $cb00
     ld c, $02
     call Call_000_03eb
@@ -3981,7 +3981,7 @@ Jump_032_53c4:
     rst $18
     ld b, $4a
     ld de, $cb00
-    ld hl, $c880
+    ld hl, wPlayer1
     ld c, $02
     call Call_000_03eb
     ld a, $22
@@ -4002,7 +4002,7 @@ jr_032_5403:
     rst $18
     inc e
     db $10
-    ld hl, $c880
+    ld hl, wPlayer1
     ld de, $c8c0
     ld c, $04
     call Call_000_03eb
@@ -12227,7 +12227,7 @@ Call_032_7dfb:
 
 Call_032_7e8e:
     push de
-    ld hl, $c880
+    ld hl, wPlayer1
     ld d, $00
     ld e, a
     ld a, [$c835]

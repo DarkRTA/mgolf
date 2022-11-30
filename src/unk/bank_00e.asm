@@ -699,9 +699,9 @@ Call_00e_42f0:
     cp $01
     jr z, jr_00e_4346
 
-    ld a, [$c899]
+    ld a, [wPlayer1_Char_AltColor]
     ld c, a
-    ld a, [$c890]
+    ld a, [wPlayer1_Char_Sprite]
     ld b, $0a
     ld de, $8400
     rst $18

@@ -1934,7 +1934,7 @@ jr_012_4b77:
 
 
 Call_012_4b8a:
-    ld a, [$c890]
+    ld a, [wPlayer1_Char_Sprite]
     cp $ff
     jr z, jr_012_4bf9
 
@@ -1956,7 +1956,7 @@ Call_012_4b8a:
     pop hl
     ld de, $5b30
     add hl, de
-    ld a, [$c899]
+    ld a, [wPlayer1_Char_AltColor]
     bit 4, a
     jr z, jr_012_4bb9
 

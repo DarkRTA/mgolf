@@ -730,7 +730,7 @@ Call_017_4440:
     and a
     jr nz, jr_017_4466
 
-    ld a, [$c890]
+    ld a, [wPlayer1_Char_Sprite]
     cp $ff
     jr z, jr_017_4486
 
@@ -1494,13 +1494,13 @@ jr_017_4845:
     ld de, $8c00
     ld c, $06
     call Call_000_2096
-    ld a, [$c890]
+    ld a, [wPlayer1_Char_Sprite]
     cp $ff
     jr z, jr_017_4880
 
-    ld a, [$c899]
+    ld a, [wPlayer1_Char_AltColor]
     ld c, a
-    ld a, [$c890]
+    ld a, [wPlayer1_Char_Sprite]
     ld b, $04
     ld de, $ac00
     rst $18
